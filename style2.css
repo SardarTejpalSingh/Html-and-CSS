@@ -1,0 +1,38 @@
+.list:before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0px;
+    
+    background: white;
+    position: absolute;
+    left: 20px;
+    margin-top: 12px;
+    visibility: hidden;
+
+    /*top: 50%;*/
+    transition: width .3s ease-in-out;
+    /*margin-right: 30px;*/
+}
+.list{
+    list-style-type: none;
+    text-decoration: none;
+    /*position: fixed;*/
+    
+}
+.anc{
+    padding-left: 40px;
+    /*margin-left: px;*/
+    text-decoration: none;
+}
+.list:hover::before{
+    
+    visibility: visible;
+    width: 25px;
+    /*transform: translate3d(0%, -50% , 40%);*/
+    /*transition: width 3s ease-in-out;*/
+    
+}
+/*.hnav{
+    float: left;
+}*/
